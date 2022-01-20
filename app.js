@@ -28,7 +28,10 @@ function entry(int) {
 
 // Kinda forgot I put this here, guess this is next TODO lolz
 function del() {
-    console.log("I am deleting something")
+    console.log(x.length)
+    if (xory == 0) { x = x.substring(0, x.length -1) }
+    if (xory == 1) { y = y.substring(0, y.length -1) }
+    display()
 }
 
 // Returns all variable values to starting state
