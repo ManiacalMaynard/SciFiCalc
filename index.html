@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="./styles.css">
+
+
+    <title>Super Spiffy Sci-Fi Calculator</title>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="display">
+            <div class="btn" onclick="allClear()">AC</div>
+            <div id="outputDisplay"></div>
+        </div>
+        <div id="keypad">
+            <div class="btn" onclick="entry('8')">8</div>
+            <div class="btn" onclick="entry('9')">9</div>
+            <div class="btn" onclick="entry('7')">7</div>
+            <div class="btn" onclick="entry('/')">/</div>
+
+            <div class="btn" onclick="entry('4')">4</div>
+            <div class="btn" onclick="entry('5')">5</div>
+            <div class="btn" onclick="entry('6')">6</div>
+            <div class="btn" onclick="entry('*')">×</div>
+
+            <div class="btn" onclick="entry('1')">1</div>
+            <div class="btn" onclick="entry('2')">2</div>
+            <div class="btn" onclick="entry('3')">3</div>
+            <div class="btn" onclick="entry('-')">-</div>
+
+            <div class="btn" onclick="del()">DEL</div>
+            <div class="btn" onclick="entry('0')">0</div>
+            <div class="btn" onclick="entry('.')">.</div>
+            <div class="btn" onclick="entry('+')">+</div>
+        </div>
+        <div class="btn" id="enter" onclick="calculate()">CALCULATE</div>
+    </div>
+    <footer>This calculator coding project was created by Steven "Maynard" Chastain for funzies. Feel free to check the code at GitHub. If you want to find other projects by Maynard, head over to maniacalindustries.com. Thank you fellow human for your visit! ÷</footer>
+
+</body>
+
+<script src="./app.js"></script>
+
+</html>

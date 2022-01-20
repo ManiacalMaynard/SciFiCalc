@@ -1,0 +1,83 @@
+:root {
+    --nearWhite: hsl(195, 50%, 70%);
+    --midBlue: hsl(195, 50%, 20%);
+    --borderColor: hsl(195, 50%, 15%);
+    --blackBlue: hsl(195, 50%, 5%);
+}
+
+/* * {border: 1px solid pink;} */
+
+body {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Barlow', 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+    color: var(--nearWhite);
+    background-color: var(--blackBlue);
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+#container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--borderColor);
+}
+
+#display {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#display div {
+    padding: 30px;
+    border: 1px solid var(--borderColor);
+}
+
+#keypad {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.btn{
+    padding: 30px;
+    border: 1px solid var(--borderColor);
+}
+
+.btn:hover {
+    background-color: var(--midBlue);
+}
+
+#enter {
+    width: 100%;
+    height: 2.25rem;
+    padding: 30px 0px;
+    text-align: center;
+    line-height: 100%;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.6rem;
+    font-weight: 400;
+}
